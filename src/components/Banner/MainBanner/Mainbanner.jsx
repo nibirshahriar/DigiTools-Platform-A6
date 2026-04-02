@@ -1,9 +1,17 @@
 import React, { use } from "react";
 import ProductCard from "./ProductCard";
+import Cart from "./cart";
 
-const Mainbanner = ({ productPromise }) => {
+const Mainbanner = ({
+  productPromise,
+  setActiveTab,
+  activeTab,
+  setCarts,
+  carts,
+}) => {
   const products = use(productPromise);
-//   console.log(products);
+  //   console.log(products);
+//   console.log(carts);
 
   return (
     <div className="py-20 max-w-7xl mx-auto">
@@ -14,12 +22,42 @@ const Mainbanner = ({ productPromise }) => {
           designed <br /> to boost your productivity and creativity.
         </p>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        {products.map((product) =>  
-<ProductCard key={product.id} product={product}/>
-)}
+      <div className="tabs tabs-box justify-center bg-transparent mt-6 gap-3">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full w-40 font-bold 
+      text-black
+    checked:bg-linear-to-r checked:from-[#4F39F6] checked:to-[#9514FA] 
+    checked:text-white border-none"
+          aria-label="Products"
+          onClick={() => setActiveTab("product")}
+          defaultChecked
+        />
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full w-40 font-bold 
+   text-black
+    checked:bg-linear-to-r checked:from-[#4F39F6] checked:to-[#9514FA] 
+    checked:text-white border-none"
+          aria-label="Cart"
+          onClick={() => setActiveTab("cart")}
+        />
       </div>
+      {activeTab === "product" && (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          {products.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              setCarts={setCarts}
+              carts={carts}
+            />
+          ))}
+        </div>
+      )}
+      {activeTab === "cart" && <Cart carts={carts} setCarts={setCarts} />}
     </div>
   );
 };
