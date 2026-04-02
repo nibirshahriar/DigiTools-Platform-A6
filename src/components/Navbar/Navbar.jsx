@@ -36,7 +36,7 @@ const Navbar = () => {
             <span className="text-2xl flex items-center">
               <CiShoppingCart />
             </span>
-            <button className="font-bold">Login</button>
+            <button className="font-bold cursor-pointer">Login</button>
             <a className="btn rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] border-none">
               Get Started
             </a>

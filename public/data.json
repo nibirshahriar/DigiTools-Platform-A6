@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI assistance.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Kit",
+    "description": "Ready-to-use templates for social media posts.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["500+ designs", "Editable files", "Instagram & Facebook"],
+    "icon": "📱"
+  },
+  {
+    "id": 3,
+    "name": "Logo Maker Pro",
+    "description": "Design logos instantly using AI tools.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["AI logo generator", "High-res export", "Brand kit"],
+    "icon": "🎨"
+  },
+  {
+    "id": 4,
+    "name": "Website Templates Pack",
+    "description": "Modern and responsive website templates.",
+    "price": 15,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["50+ templates", "Responsive design", "Easy customization"],
+    "icon": "🌐"
+  },
+  {
+    "id": 5,
+    "name": "AI Copywriting Tool",
+    "description": "Generate marketing copy in seconds.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Ad copy generator", "SEO optimized", "Multiple tones"],
+    "icon": "✍️"
+  },
+  {
+    "id": 6,
+    "name": "Presentation Kit",
+    "description": "Create stunning presentations easily.",
+    "price": 10,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["100+ slides", "Editable charts", "PowerPoint & Google Slides"],
+    "icon": "📊"
+  },
+  {
+    "id": 7,
+    "name": "UI Design System",
+    "description": "Complete UI kit for modern apps.",
+    "price": 25,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Figma components", "Design tokens", "Dark & light mode"],
+    "icon": "🧩"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Pack",
+    "description": "Templates for high-converting emails.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["50+ templates", "Mobile optimized", "HTML ready"],
+    "icon": "📧"
+  },
+  {
+    "id": 9,
+    "name": "Stock Photo Bundle",
+    "description": "High-quality stock images for projects.",
+    "price": 20,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["1000+ images", "Royalty-free", "HD quality"],
+    "icon": "🖼️"
+  },
+  {
+    "id": 10,
+    "name": "Video Editing Toolkit",
+    "description": "Tools and assets for video creators.",
+    "price": 18,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Transitions", "Effects", "4K assets"],
+    "icon": "🎬"
+  }
+]
