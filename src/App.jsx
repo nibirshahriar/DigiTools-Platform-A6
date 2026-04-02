@@ -29,13 +29,17 @@ function App() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         setCarts={setCarts}
-carts={carts}
+        carts={carts}
       />
-<GetStartBanner/>
-<SimpleTransBanner/>
-<ReadyToTransBanner/>
-<Footer/>
-<ToastContainer/>
+      {activeTab === "product" && (
+        <>
+          <GetStartBanner />
+          <SimpleTransBanner />
+          <ReadyToTransBanner />
+          <Footer />
+        </>
+      )}
+      <ToastContainer />
     </>
   );
 }
