@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { ToastContainer } from "react-toastify";
 import GetStartBanner from "./components/Banner/MainBanner/GetStartBanner";
 import SimpleTransBanner from "./components/Banner/MainBanner/SimpleTransBanner";
+import ReadyToTransBanner from "./components/Banner/MainBanner/ReadyToTransBanner";
 
 const getProducts = async () => {
   const res = await fetch("/data.json");
@@ -31,6 +32,7 @@ carts={carts}
       />
 <GetStartBanner/>
 <SimpleTransBanner/>
+<ReadyToTransBanner/>
 <ToastContainer/>
     </>
   );
