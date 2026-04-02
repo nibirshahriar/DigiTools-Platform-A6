@@ -18,7 +18,7 @@ function App() {
   // console.log(carts);
   return (
     <>
-      <Navbar />
+      <Navbar carts={carts} />
       <Banner />
       <Mainbanner
         productPromise={productPromise}

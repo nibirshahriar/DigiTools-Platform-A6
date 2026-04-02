@@ -22,6 +22,8 @@ const Mainbanner = ({
           designed <br /> to boost your productivity and creativity.
         </p>
       </div>
+
+      {/* toggle btns */}
       <div className="tabs tabs-box justify-center bg-transparent mt-6 gap-3">
         <input
           type="radio"
@@ -41,7 +43,7 @@ const Mainbanner = ({
    text-black
     checked:bg-linear-to-r checked:from-[#4F39F6] checked:to-[#9514FA] 
     checked:text-white border-none"
-          aria-label="Cart"
+          aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab("cart")}
         />
       </div>

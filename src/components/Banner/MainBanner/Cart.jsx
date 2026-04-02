@@ -1,4 +1,5 @@
 import React from "react";
+import { CiShoppingCart } from "react-icons/ci";
 import { toast } from "react-toastify";
 
 const Cart = ({ carts, setCarts }) => {
@@ -18,9 +19,13 @@ const Cart = ({ carts, setCarts }) => {
       <h2 className="text-xl font-semibold mb-4">Your Cart</h2>
 
       {carts.length === 0 ? (
-        <p className="text-center text-gray-400 py-6 bg-gray-100 rounded-lg">
-          Your Cart Is Empty
-        </p>
+        <div className="text-center bg-gray-100 py-10 rounded-lg">
+          <CiShoppingCart className="text-6xl text-gray-400 mx-auto mb-4" />
+
+          <p className="text-gray-500 text-lg font-medium">
+            Your Cart Is Empty
+          </p>
+        </div>
       ) : (
         <>
           <div className="space-y-4">
